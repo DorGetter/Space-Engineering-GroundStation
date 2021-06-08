@@ -5,7 +5,7 @@
 
 This repository shows an experiment conducted as part of a space engineering course. <br />
 The goal is to build a ground station capable of detecting and tracking objects moving in the sky (mostly satellites).<br />
-The system is based on the use of the "NexStar 8SE Computerized Telescope" telescope. <br />
+The system is based on the use of the "NexStar 8SE Computerized Telescope". <br />
 The telescope is connected to a laptop that processes the image and directs the tripod motors so that the selected object remains in the center of the frame.
 This video shows the last experiment performed on 08/06/2021 on the roof of Building 21 (Communication Building) at Ariel University.<br />
 
