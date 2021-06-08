@@ -35,7 +35,8 @@ It can be seen that the algorithm is able to identify and track the space statio
 #### Running The On Live Photage Using Camera And The Telescope Tripod: 
 
 ##### PC frame: 
-
+In the second stage we went from testing the algorithms by video to testing it in the real world.
+To do this, we built an interface for working with the tripod motors of a telescope and integrating the algorithms.
 In the video, the algorithm detects an object (probably a satellite or a plane at high altitude) and after a "follow" command the algorithm tracks the object while using the telescopic tripod motors to keep it in the center of the frame. <br />
 We can see the object data in the frame as well as the motion data for the motors on the X and Y axes as well as the speed of movement in each of the axes.
 
