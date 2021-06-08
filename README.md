@@ -20,7 +20,7 @@ This video shows the last experiment performed on 08/06/2021 on the roof of Buil
 The NextStar 8SE is a computerized telescope that has 2032mm of Focal Length and can magnify up to x480. <br />
 In this project we will design and implement a software that will give the telescope the ability the detect objects and track them. <br />
 
-The telescope sends frame to a PC, the PC detects objects and let the operator of the telescope to choose one objects to track,
+The video camera mounted on the side of a telescope sends frame to a PC, the PC detects objects and let the operator of the telescope to choose one objects to track,
 based on the selection of the operator, the PC calculates the movement that the telescope has to make in order the keep the object
 in the center of its frame, the PC sends the instructions to a DC Motor that controll the telescope thorugh a microprocessor. <br />
 
