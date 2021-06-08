@@ -26,6 +26,8 @@ in the center of its frame, the PC sends the instructions to a DC Motor that con
 
 
 #### Running The Code On Video: 
+In the initial phase the testing of the algorithms was done using a video of the ISS station moving at an altitude of about 870 miles.
+It can be seen that the algorithm is able to identify and track the space station despite the great difficulty of the distance.<br />
 
 ![ezgif-2-3daec10f894d](https://user-images.githubusercontent.com/57401083/120172646-8d862000-c203-11eb-9412-6fd2db1137b8.gif)
 
