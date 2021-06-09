@@ -37,7 +37,7 @@ class Telescope():
 
 if __name__ == "__main__":
     """ 
-    -If you are using windows machine, check for the correct port on the device manager
+    -If you are using windows machine, check for the correct port on the device manager / or run the port_chacker_windows.py. 
     -If you are using linux machine, check for the correct port on the dev/ttyUSB folder
     """
 
