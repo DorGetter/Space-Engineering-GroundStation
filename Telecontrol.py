@@ -87,7 +87,7 @@ class Telcontrol(tr.Thread):
         """
     tr.Thread.__init__(self);
     self.ser = serial.Serial()
-    self.ser.port = 'com8'  # may be called something different
+    self.ser.port = port  # may be called something different
     self.ser.baudrate = 9600  # may be different
     isopenend = self.ser.open()
 
