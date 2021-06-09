@@ -46,8 +46,17 @@ We can see the object data in the frame as well as the motion data for the motor
   ##### For the full video visit https://youtu.be/62CU6IS1yPU <br />
 
   
-  ### How to use our code 
-  Just clone it and run quickstart.py, everything there is to now can be found there. <br />
+   <br /> 
+   <br />
+  
+  ## How to use our code 
+  1. Clone this repository  <br />
+  
+  ##### Run the movement/tracking algorithm: <br />
+  Run the code just run the main_tracking_api.py script (make sure to check which port is serial for the telescope).  <br />
+  
+  ##### Explore the telescope API for self implementation: 
+  Run quickstart.py, everything you want to know for basic controls can be found there. <br />
   You can also check the Telecontrol.py file for documentation. <br />
 
 
