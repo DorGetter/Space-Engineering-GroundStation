@@ -46,6 +46,9 @@ We can see the object data in the frame as well as the motion data for the motor
   ##### For the full video visit https://youtu.be/62CU6IS1yPU <br />
 
   
+  ### How to use our code 
+  Just clone it and run quickstart.py, everything there is to now can be found there. <br />
+  You can also check the Telecontrol.py file for documentation. <br />
 
 
 ##### Video of the setting: 
