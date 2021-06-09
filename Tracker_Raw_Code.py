@@ -1,12 +1,18 @@
 import cv2
 import numpy as np
 
+
+#####################################################################################################################################
+############################### First attemp algorithm for movement detection combined with tracking functionality. #################
+############################### This code run on the algorithm on the 'iss.mp4' video. ############################################## 
+############################### -> for tracking click on the box of the iss object. #################################################
+#####################################################################################################################################
 lk_params = dict(winSize=(10, 10),
                  maxLevel=2,
                  criteria=(cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_COUNT, 10, 0.03))
 
 
-
+# takes the mouse click event return the x,y coordinates. 
 def selected_point(event, x, y, flags, params):
     global point, point_selected, old_points
     if event == cv2.EVENT_LBUTTONDOWN:
@@ -24,7 +30,14 @@ def rescale_frame(frame, scale=0.75):
     return cv2.resize(frame, dimensions, interpolation=cv2.INTER_AREA)
 
 
+  
+# Run on video
 cap = cv2.VideoCapture("iss.mp4")
+# To run the code using the web camera ( or other usb device uncomment the next line )
+# cap = cv2.VideoCapture(0) #~ run with webcam
+# cap = cv2.VideoCapture(1) #~ run with secondery cam (usb port)
+
+
 
 ret, frame1 = cap.read()
 ret, frame2 = cap.read()
