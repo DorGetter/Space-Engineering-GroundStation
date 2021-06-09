@@ -55,7 +55,7 @@ We can see the object data in the frame as well as the motion data for the motor
   2. Run the movement/tracking algorithm: <br />
   Run the main_tracking_api.py script (make sure to check which port is serial for the telescope).  <br />
   
-  3. Explore the telescope API for self implementation: 
+  3. Explore the telescope API for self implementation:<br /> 
   Run quickstart.py, everything you want to know for basic controls can be found there. <br />
   You can also check the Telecontrol.py file for documentation. <br />
 
