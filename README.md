@@ -65,6 +65,15 @@ We can see the object data in the frame as well as the motion data for the motor
 ![Hnet-image (3)](https://user-images.githubusercontent.com/57187365/121263150-e1f16580-c8bd-11eb-9809-58de113640a3.gif)
 
 
+#### Picture of the setting: 
+
+![image](https://user-images.githubusercontent.com/57187365/121382378-37298780-c94f-11eb-9079-78ca48ec7b63.png)
+
+#### Video operating the telescope using code:
+
+![Hnet-image (6)](https://user-images.githubusercontent.com/57187365/121384245-c1262000-c950-11eb-8181-4a82d7a307df.gif)
+
+
 
 
 
