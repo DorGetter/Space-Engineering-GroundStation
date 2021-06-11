@@ -92,3 +92,5 @@ We can see the object data in the frame as well as the motion data for the motor
 https://docs.google.com/document/d/1wRMaSamaBNzidF_HhinaGVvgcgpyVfukSng88PlZtuM/edit <br />
 ### Project proposal 
 https://docs.google.com/document/d/1wRMaSamaBNzidF_HhinaGVvgcgpyVfukSng88PlZtuM/edit <br />
+
+https://docs.google.com/document/d/1yVUBGfMSdsCuy7AHw5dD5rc6hjT6BTHuacpwwT0vHp0/edit
