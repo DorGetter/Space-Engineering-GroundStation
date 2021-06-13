@@ -93,3 +93,4 @@ https://docs.google.com/document/d/1wRMaSamaBNzidF_HhinaGVvgcgpyVfukSng88PlZtuM/
 ### Project proposal 
 https://docs.google.com/document/d/1wRMaSamaBNzidF_HhinaGVvgcgpyVfukSng88PlZtuM/edit <br />
 ### Check out the GroundStationDocument for further information
+https://github.com/DorGetter/Space-Engineering-GroundStation/blob/master/GroundStationDocument.pdf <br />
