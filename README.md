@@ -59,7 +59,17 @@ We can see the object data in the frame as well as the motion data for the motor
   Run quickstart.py, everything you want to know for basic controls can be found there. <br />
   You can also check the Telecontrol.py file for documentation. <br />
   
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  
   <img width="566" alt="2021-07-22 (1)" src="https://user-images.githubusercontent.com/57047863/126644107-173d8cb0-caad-4e8e-b590-253887941091.png">
+  <br />
+  <img width="655" alt="2021-07-23" src="https://user-images.githubusercontent.com/57047863/126796121-cecf2a4d-0dd0-4870-a4e6-cb01af971acb.png">
+  <br />
+  <img width="659" alt="2021-07-23 (1)" src="https://user-images.githubusercontent.com/57047863/126796308-7f020992-3a10-4186-8a76-ad323b1cdaa7.png">
 
 
 
