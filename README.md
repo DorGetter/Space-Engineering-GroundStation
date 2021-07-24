@@ -70,6 +70,8 @@ We can see the object data in the frame as well as the motion data for the motor
   <img width="655" alt="2021-07-23" src="https://user-images.githubusercontent.com/57047863/126796121-cecf2a4d-0dd0-4870-a4e6-cb01af971acb.png">
   <br />
   <img width="659" alt="2021-07-23 (1)" src="https://user-images.githubusercontent.com/57047863/126796308-7f020992-3a10-4186-8a76-ad323b1cdaa7.png">
+  <br />
+  <img width="493" alt="2021-07-24" src="https://user-images.githubusercontent.com/57047863/126876884-52642913-ec72-4331-aef1-f33bc6337955.png">
 
 
 
