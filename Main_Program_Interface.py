@@ -1,4 +1,5 @@
 import sys
+import os
 import tkinter as tk
 
 input_param = ""
@@ -26,20 +27,35 @@ else:
 
 def start():
     print("start tracking...")
-    browse_text.set("tracking objects...")
 
-    text_box = tk.Text(root, height=2, width=50, padx=15, pady=15)
+    text_box = tk.Text(root, height=2, width=25, padx=15, pady=15)
     text_box.insert(1.0, input_param)
+    text_box.grid(column=1, row=2)
+
+    # execute the Main Tracking program #
+    os.system('python Main_Tracking_Api.py')
+
+
+def stop():
+    print("stop tracking!")
+
+    text_box = tk.Text(root, height=2, width=25, padx=15, pady=15)
+    text_box.insert(1.0, "stop tracking!")
     text_box.grid(column=1, row=2)
 
 
 root = tk.Tk()
-canvas = tk.Canvas(root, width=600, height=400)
+canvas = tk.Canvas(root, width=650, height=400)
 canvas.grid(columnspan=3, rowspan=3)
 
-browse_text = tk.StringVar()
-browse_btn = tk.Button(root, textvariable=browse_text, command=lambda: start(), font="Raleway", bg="#20bebe", fg="white", height=2, width=15)
-browse_text.set("Start")
-browse_btn.grid(column=1, row=2)
+start_text = tk.StringVar()
+start_btn = tk.Button(root, textvariable=start_text, command=lambda: start(), font="Raleway", bg="#20bebe", fg="white", height=2, width=10)
+start_text.set("Start")
+start_btn.grid(column=0, row=0)
+
+stop_text = tk.StringVar()
+stop_btn = tk.Button(root, textvariable=stop_text, command=lambda: stop(), font="Raleway", bg="red2", fg="white", height=2, width=10)
+stop_text.set("Stop")
+stop_btn.grid(column=0, row=1)
 
 root.mainloop()
