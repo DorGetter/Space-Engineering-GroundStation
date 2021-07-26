@@ -7,6 +7,7 @@ class Tracker :
 
 
 
+
     def __init__(self,telescopeEnabled = True):
 
         self.old_points = np.array([[0, 0]],dtype=np.float32)
@@ -44,6 +45,10 @@ class Tracker :
         
 """
     def tracker(self):
+
+        close_flag = False
+        far_flag = True
+
         is_tracking = False
         ApplyCrop = True
         lk_params = dict(winSize=(10, 10),
@@ -121,28 +126,57 @@ class Tracker :
                             round(y_))
 
                         if self.telescopeEnabled:
-                            #print(x_,y_)
-                            dx = x_-(frame1.shape[1]//2)
-                            dy = y_-(frame1.shape[0]//2)
-                            sx = 4
-                            sy = 4
-                            if abs(dx) < 100:
-                                sx = 3
-                            if abs(dx) < 75:
-                                sx = 2
-                            if abs(dx) < 50:
-                                sx = 1
-                            if abs(dx) < 10:
-                                sx = 0
 
-                            if abs(dy) < 100:
-                                sx = 3
-                            if abs(dy) < 75:
-                                sx = 2
-                            if abs(dy) < 50:
-                                sx = 1
-                            if abs(dy) < 10:
-                                sx = 0
+                            if far_flag:
+                                #print(x_,y_)
+                                dx = x_-(frame1.shape[1]//2)
+                                dy = y_-(frame1.shape[0]//2)
+                                sx = 4
+                                sy = 4
+                                if abs(dx) < 100:
+                                    sx = 3
+                                if abs(dx) < 75:
+                                    sx = 2
+                                if abs(dx) < 50:
+                                    sx = 1
+                                if abs(dx) < 10:
+                                    sx = 0
+
+                                if abs(dy) < 100:
+                                    sx = 3
+                                if abs(dy) < 75:
+                                    sx = 2
+                                if abs(dy) < 50:
+                                    sx = 1
+                                if abs(dy) < 10:
+                                    sx = 0
+
+                            elif close_flag:
+                                # print(x_,y_)
+                                dx = x_ - (frame1.shape[1] // 2)
+                                dy = y_ - (frame1.shape[0] // 2)
+                                sx = 8
+                                sy = 8
+                                if abs(dx) < 100:
+                                    sx = 6
+                                if abs(dx) < 75:
+                                    sx = 4
+                                if abs(dx) < 50:
+                                    sx = 2
+                                if abs(dx) < 10:
+                                    sx = 0
+
+                                if abs(dy) < 100:
+                                    sx = 6
+                                if abs(dy) < 75:
+                                    sx = 4
+                                if abs(dy) < 50:
+                                    sx = 2
+                                if abs(dy) < 10:
+                                    sx = 0
+
+                            else:
+                                print("no distance flag")
 
                             put_telescop_data = "dx: " + str(round(dx)) + ", dy: " + str(round(-dy)) + ", tele speed x axis: " + str(sy) + ", tele speed y axis: " + str(sx)
                             cv2.putText(frame1, put_telescop_data, (100, 250), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (120, 120, 20), 2)
