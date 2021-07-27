@@ -1,13 +1,15 @@
+############################################################
+################## Main Tracking Module ####################
+############################################################
+
 import cv2
 import numpy as np
 import Telecontrol
 import time
 import TrackFunc
 class Tracker :
-
-
-
-
+    
+    # Init the telesecope control api
     def __init__(self,telescopeEnabled = True):
 
         self.old_points = np.array([[0, 0]],dtype=np.float32)
@@ -23,7 +25,7 @@ class Tracker :
 
 
         print("Telescope is Ready for Remote Controll")
-
+    #init the camera
     def init_camera(self):
         # init input stream
         self.cap = cv2.VideoCapture(1)
@@ -43,7 +45,8 @@ class Tracker :
         self.out = cv2.VideoWriter(self.output_folder + self.output_file, cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'),
                                    10, (frame_width, frame_height))
         
-"""
+        """
+    #init tracking parameters    
     def tracker(self):
 
         close_flag = False
@@ -63,7 +66,7 @@ class Tracker :
             return cv2.resize(frame, dimensions, interpolation=cv2.INTER_AREA)
 
 
-
+        # points of the objects we wish to track
         def selected_point(event, x, y, flags, params):
             #global point, point_selected, old_points
             if event == cv2.EVENT_LBUTTONDOWN:
@@ -83,7 +86,7 @@ class Tracker :
 
         #self.point = ()
         #self.old_points = np.array([[]])
-
+        
         while self.cap.isOpened():
             #cv2.circle(frame1, (frame1.shape[1]//2, frame1.shape[0]//2), 10, (200, 200, 100), 3)
             diff = cv2.absdiff(frame1, frame2)
